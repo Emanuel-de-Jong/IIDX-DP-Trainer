@@ -1,0 +1,184 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://visualsBehindBackground/video/videoScript.gd" type="Script" id=1]
+[ext_resource path="res://gameplayBehindBackground/columnsImage.png" type="Texture" id=2]
+[ext_resource path="res://gameplayBehindBackground/laneImages/lane.png" type="Texture" id=3]
+[ext_resource path="res://gameplayBehindBackground/laneBarImage.png" type="Texture" id=4]
+[ext_resource path="res://gameplayBehindBackground/laneLineImage.png" type="Texture" id=5]
+[ext_resource path="res://background.png" type="Texture" id=6]
+[ext_resource path="res://visualsInFrontOfBackground/gauge/gaugeBar/gaugeBarImage.png" type="Texture" id=7]
+
+[sub_resource type="Animation" id=1]
+resource_name = "LiftBarBlink"
+length = 0.3
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.254902 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+length = 0.1
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1e-005, 0.5 ), Vector2( 0.993333, 0.5 ), Vector2( 0.993333, 0.5 ) ]
+}
+
+[node name="Main" type="Node"]
+
+[node name="VisualsBehindBackground" type="Node" parent="."]
+
+[node name="Video" type="Node" parent="VisualsBehindBackground"]
+script = ExtResource( 1 )
+
+[node name="VideoVideoPlayerTop" type="VideoPlayer" parent="VisualsBehindBackground/Video"]
+margin_left = -75.0
+margin_top = 43.0
+margin_right = 344.0
+margin_bottom = 357.0
+
+[node name="VideoVideoPlayerBottom" type="VideoPlayer" parent="VisualsBehindBackground/Video"]
+margin_left = -75.0
+margin_top = 363.0
+margin_right = 344.0
+margin_bottom = 677.0
+
+[node name="GameplayBehindBackground" type="Node" parent="."]
+
+[node name="ColumnsLeft" type="Sprite" parent="GameplayBehindBackground"]
+position = Vector2( 450, 241 )
+scale = Vector2( 1, 1.01048 )
+texture = ExtResource( 2 )
+
+[node name="ColumnsRight" type="Sprite" parent="GameplayBehindBackground"]
+position = Vector2( 830, 241 )
+scale = Vector2( 1, 1.01048 )
+texture = ExtResource( 2 )
+flip_h = true
+
+[node name="Notes" type="Node" parent="GameplayBehindBackground"]
+
+[node name="Sudden" type="Node" parent="GameplayBehindBackground"]
+editor/display_folded = true
+
+[node name="SuddenSpriteLeft" type="Sprite" parent="GameplayBehindBackground/Sudden"]
+position = Vector2( 450, -176 )
+scale = Vector2( 0.993103, 0.995868 )
+texture = ExtResource( 3 )
+
+[node name="SuddenSpriteRight" type="Sprite" parent="GameplayBehindBackground/Sudden"]
+position = Vector2( 830, -176 )
+scale = Vector2( 0.993103, 0.995868 )
+texture = ExtResource( 3 )
+
+[node name="Lift" type="Node" parent="GameplayBehindBackground"]
+editor/display_folded = true
+
+[node name="LiftBar" type="Sprite" parent="GameplayBehindBackground/Lift"]
+editor/display_folded = true
+position = Vector2( 640, 412 )
+scale = Vector2( 0.835, 1 )
+texture = ExtResource( 4 )
+
+[node name="LiftBarAnimationPlayer" type="AnimationPlayer" parent="GameplayBehindBackground/Lift/LiftBar"]
+autoplay = "LiftBarBlink"
+anims/LiftBarBlink = SubResource( 1 )
+
+[node name="LiftLine" type="Sprite" parent="GameplayBehindBackground/Lift"]
+position = Vector2( 640, 424.5 )
+scale = Vector2( 0.835, 0.599996 )
+texture = ExtResource( 5 )
+
+[node name="LiftSpriteLeft" type="Sprite" parent="GameplayBehindBackground/Lift"]
+position = Vector2( 450, 667 )
+scale = Vector2( 0.993103, 0.995868 )
+texture = ExtResource( 3 )
+
+[node name="LiftSpriteRight" type="Sprite" parent="GameplayBehindBackground/Lift"]
+position = Vector2( 830, 667 )
+scale = Vector2( 0.993103, 0.995868 )
+texture = ExtResource( 3 )
+
+[node name="Hidden" type="Node" parent="GameplayBehindBackground"]
+editor/display_folded = true
+
+[node name="HiddenSpriteLeft" type="Sprite" parent="GameplayBehindBackground/Hidden"]
+position = Vector2( 450, 699 )
+rotation = 3.14159
+scale = Vector2( 0.993103, 0.995868 )
+texture = ExtResource( 3 )
+
+[node name="HiddenSpriteRight" type="Sprite" parent="GameplayBehindBackground/Hidden"]
+position = Vector2( 830, 699 )
+rotation = 3.14159
+scale = Vector2( 0.993103, 0.995868 )
+texture = ExtResource( 3 )
+
+[node name="SettingsBehindBackground" type="Node" parent="."]
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 640, 360 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VisualsInFrontOfBackground" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="Gauge" type="Node" parent="VisualsInFrontOfBackground"]
+editor/display_folded = true
+
+[node name="GaugeBar" type="Sprite" parent="VisualsInFrontOfBackground/Gauge"]
+editor/display_folded = true
+position = Vector2( 640, 591 )
+scale = Vector2( 0.993333, 0.5 )
+texture = ExtResource( 7 )
+
+[node name="GaugeBarAnimationPlayerBlink" type="AnimationPlayer" parent="VisualsInFrontOfBackground/Gauge/GaugeBar"]
+autoplay = "GaugeBarBlink"
+anims/GaugeBarBlink = SubResource( 2 )
+
+[node name="GaugeBarAnimationPlayerStretch" type="AnimationPlayer" parent="VisualsInFrontOfBackground/Gauge/GaugeBar"]
+autoplay = "GaugeBarStretch"
+anims/GaugeBarStretch = SubResource( 3 )
+
+[node name="GameplayInFrontOfBackground" type="Node" parent="."]
+
+[node name="SettingsInFrontOfBackground" type="Node" parent="."]
+[connection signal="finished" from="VisualsBehindBackground/Video/VideoVideoPlayerTop" to="VisualsBehindBackground/Video" method="_on_VideoVideoPlayerTop_finished"]

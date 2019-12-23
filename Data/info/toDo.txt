@@ -1,0 +1,13 @@
+Known Problems:
+
+features not working:
+	hitsounds
+bugs:
+	checkbox switchbutton doesn't turn on/off on launch
+	moving lift up fully sometimes causes weird note behaviours
+	hitsounds doesn't display any files after building
+	config needed
+errors:
+	method/function failed, returning: err 
+	Failed to get modified time for: projectpath/Project/fonts/BebasNeu-Regular.otf
+	2x Condition '!f' is true. returned: ERR_CANT_OPEN

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/bassNormal.wav-38300dac4cf843ec57b927800c119977.sample"
+
+[deps]
+
+source_file="res://sounds/hitsounds/bassNormal.wav"
+dest_files=[ "res://.import/bassNormal.wav-38300dac4cf843ec57b927800c119977.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

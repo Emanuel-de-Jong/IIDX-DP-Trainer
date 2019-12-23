@@ -1,0 +1,39 @@
+Potential Future Features (sorted by order of implementation):
+
+save window size
+more accurate beam and note positions
+notecount up to 14 instead of 10
+display lane height number under top of lane
+make measurements more like the ones in iidx
+on/off buttons instead of switches on notecounts/columnchecks
+on keybind change, go through every key in hand instead of clicking individually
+turn analog support
+change rotation of turntables on turn
+let number input only except numbers
+make all keys bindable
+change spawn system to possible patterns with current columnchecks
+let users choose combinations to exclude
+same notes on both hands mode (battle)
+mesureline option
+option to toggle lane height number under top of lane
+options for textures you can change in iidx (e.g. noteskin)
+options for brightness of columns
+background screenshots for other iidx games
+latency settings (both audio and visual)
+tooltip on option hover
+preload resources
+bottom and top lanes can't collide
+no compression of user customizable/addable resources after build
+exe icon
+somehow make an option for spawning notes on the same side as a turn
+full column color customization
+chances for spawnIntervals (e.g. spawntime 100, 1/2 25, 1/4 20, 1/8 0)
+chances for notecounts
+chances for columns ( makes turn chance unnecesary )
+popups dynamic (moveable and resizeable)
+support for other languages
+long notes
+do something with original ui numbers
+judgement system
+option for continuous notecount increase
+option for continuous spawntime increase

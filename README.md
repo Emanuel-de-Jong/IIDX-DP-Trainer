@@ -20,12 +20,12 @@ Highly configurable.
 - Completion status: 90%
 - Useable: Yes
 - Main features included: 
-       - Core gameplay
-       - Setting saving
-       - High configurability
+	- Core gameplay
+	- Setting saving
+	- High configurability
 - Main features missing:
-       - Controller support
-       - Repeating patterns
+	- Controller support
+	- Repeating patterns
 
 
 ## Screenshots

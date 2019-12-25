@@ -1,4 +1,4 @@
-# IIDX-DP-TRAINER
+# IIDX-DP-Trainer
  
 ## Description
 Acts the same as the game but waits for you to press the note combinations.

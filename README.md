@@ -1,8 +1,20 @@
-# IIDX-DP-Trainer
- 
-## Description
+# IIDX DP Trainer
 Acts the same as the game but waits for you to press the note combinations.
 Highly configurable.
+
+### Table of Contents
+- [About](#about)
+
+| | |
+| :---: | :---: |
+| ![Game](/Screenshots/1-Game.png) | ![Settings](/Screenshots/2-Settings.png) |
+
+## About
+| | |
+| --- | --- |
+| | - **Project Overview** - |
+| **Active Development:** | 2019-08-14 - 2019-08-28 |
+| **Maintenance:** |  |
 
 
 ## Information
@@ -26,9 +38,3 @@ Highly configurable.
 - Main features missing:
 	- Controller support
 	- Repeating patterns
-
-
-## Screenshots
-![Game](/Screenshots/Game.png)
-
-![Settings](/Screenshots/Settings.png)

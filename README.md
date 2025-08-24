@@ -1,28 +1,18 @@
 # IIDX DP Trainer
-Acts the same as the game but waits for you to press the note combinations.
-Highly configurable.
+Acts the same as the game but waits for you to press the note combinations. Highly configurable.
 
-### Table of Contents
-- [About](#about)
+**Active Development:** <br>
+**Last Change:** <br>
 
 | | |
 | :---: | :---: |
 | ![Game](/Screenshots/1-Game.png) | ![Settings](/Screenshots/2-Settings.png) |
-
-## About
-| | |
-| --- | --- |
-| | - **Project Overview** - |
-| **Active Development:** | 2019-08-14 - 2019-08-28 |
-| **Maintenance:** |  |
-
 
 ## Information
 - Type: Game
 - For: Beatmania IIDX Double Play
 - Language: English
 - Programming languages: GDScript(Python like)
-
 
 ## Progress
 - Start date: 14.08.19

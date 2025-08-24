@@ -6,7 +6,7 @@ Acts the same as the game but waits for you to press the note combinations. High
 
 | | |
 | :---: | :---: |
-| ![Game](/Screenshots/1-Game.png) | ![Settings](/Screenshots/2-Settings.png) |
+| ![](/Screenshots/1-Game.png) | ![](/Screenshots/2-Settings.png) |
 
 ## Information
 - Type: Game

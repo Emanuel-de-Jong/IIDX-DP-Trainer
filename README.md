@@ -1,8 +1,8 @@
 # IIDX DP Trainer
 Acts the same as the game but waits for you to press the note combinations. Highly configurable.
 
-**Active Development:** <br>
-**Last Change:** <br>
+**Active Development:** 2019-08-14 - 2019-08-28<br>
+**Last Change:** 2019-08-28<br>
 
 | | |
 | :---: | :---: |
@@ -15,8 +15,6 @@ Acts the same as the game but waits for you to press the note combinations. High
 - Programming languages: GDScript(Python like)
 
 ## Progress
-- Start date: 2019-08-14
-- Last change: 2019-08-28
 - Activity status: Ended
 - Reason activity status: It doesn't have all the features I'd like but it's close enough and I have more important things to work on
 - Completion status: 90%

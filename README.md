@@ -26,3 +26,4 @@ Acts the same as the game but waits for you to press the note combinations. High
 - Main features missing:
 	- Controller support
 	- Repeating patterns
+ 
